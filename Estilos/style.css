@@ -1,0 +1,176 @@
+/* Isabella Segantini - Benjamin Rodriguez */
+
+/* Reset */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Itim', cursive;
+}
+
+/* Header */
+
+header {
+  background-size: cover;
+}
+
+header img {
+  width: 100%;
+}
+
+.logo {
+  width: 75px;
+  z-index: 2;
+  top: 15px;
+  left: 15px;
+  position: absolute;
+
+  /* Animacion */
+
+  animation-name: moverL;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes moverL {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+/* Main */
+
+main {
+  background-color: rgb(255, 255, 255);
+}
+
+main h2 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 50px;
+  margin-top: -5px;
+  font-family: "Itim";
+}
+
+main p {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 25px;
+}
+
+.sec1 {
+  margin-top: 35px;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+article {
+  background-color: #c7a58f;
+  width: 385px;
+  height: 569px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+article h3 {
+  text-align: center;
+}
+
+article p {
+  font-size: 20px;
+}
+
+article img {
+  display: flex;
+  align-self: center;
+}
+
+.card2 img {
+  margin-top: 18px;
+}
+
+.card3 img {
+  margin-top: -31px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 15px;
+  align-content: space-between;
+  padding-top: 69px;
+}
+
+.galeria img {
+  width: 425px;
+  height: 300px;
+  border-radius: 15px;
+  transition: 1000ms;
+}
+.galeria img:hover {
+  transition: 1000ms;
+  width: 445px;
+  height: 320px;
+  border-radius: 15px;
+}
+
+.galeria2 img {
+  width: 425px;
+  height: 300px;
+  border-radius: 15px;
+  transition: 1000ms;
+}
+
+.galeria2 img:hover {
+  transition: 1000ms;
+  width: 445px;
+  height: 320px;
+  border-radius: 15px;
+}
+
+.galeria2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 15px;
+  align-content: space-between;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: -20px;
+  font-family: "Itim";
+  font-size: 55px;
+}
+
+footer {
+  margin-top: 80px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+}
